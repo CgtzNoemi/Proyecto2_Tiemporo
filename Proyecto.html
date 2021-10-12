@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TemPoro</title>
+	<link rel="stylesheet" href="estilo1.css">
+</head>
+<body>
+    <header>
+        <input type = "checkbox" id="botonMenu">
+        <label for="botonMenu">&#9776</label>
+           
+            
+        </div>
+    </header>
+    <img id="imagen" src="imagen.jpg">
+    
+    <div class="secciones">
+        <button id="boton" onclick="Pomodoro()">Pomodoro</button>
+        <button id="boton" onclick="DescansoCorto()">Descanso corto</button>
+        <button id="boton" onclick="DescansoLargo()">Descanso largo</button>
+    </div>
+
+
+    <div class="temporizador">
+        
+
+        <div class="barra">
+            <svg width="250" height="250">
+                <circle r="100" cx="125" cy="125" class="progreso2"></circle>
+                <circle r="100" cx="125" cy="125" class="progreso" id="progreso"></circle>
+            </svg>
+
+            <div id="pomodoro-temporizador">
+                <button class="cambio" onclick="mas()">+</button><p id="pmin">25</p><p>:</p><p id="pseg">00</p><button class="cambio" onclick="menos()">-</button> 
+            </div>
+
+            
+        </div>
+        
+
+
+    </div>
+    <div class="botones">
+		<button id="start"  class="Inicio" onclick="empezar()"><p class="palabra">Inicio</p><span>&#9658</span></button>
+		<button id="pause"  class="Pausa" onclick="parar()"><p class="palabra">Parar</p><span>&#10074&#10074</span></button>
+		<button id="reset"  class="Reiniciar" onclick="restart()"><p class="palabra">Reinicio</p><span>&#8634</span></button>
+	</div>
+	
+	<script src="proyecto.js"></script>
+
+</body>
+
+</html>

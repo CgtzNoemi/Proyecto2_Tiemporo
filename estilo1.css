@@ -1,0 +1,253 @@
+body{
+    background-color: #f7f7f7ff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+:root{
+    --color1: rgb(240, 128, 128);
+}
+
+
+header {
+	width: 100%;
+	background:#ff6f67ff;
+
+}
+
+#botonMenu {
+	display: none;
+}
+header label {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+	width: 32px;
+	height: 32px;
+    padding: 0.5%;
+    color:#fff;
+}
+
+header label:hover {
+	cursor: pointer;
+	background: rgba(0,0,0,0.3);
+}
+
+.cambio{
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+    font-size: 0.8em;
+    border-radius: 100%;
+    width: 50px;
+    border: 1px solid rgb(133, 193, 233);
+    color:#fff;
+    background-color: rgb(133, 193, 233);
+}
+
+.cambio:hover{
+    background-color: #fff;
+    color: rgb(133, 193, 233);
+}
+
+
+#botonMenu:checked ~ #cambiar{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color:#ff6f67ff;
+    width: 100%;
+    margin: 0;
+}
+
+#imagen{
+    width: 202px;
+    height: 205px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.secciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+#boton{
+    background-color: #fff;
+    color: rgb(41, 128, 185);
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid rgb(41, 128, 185);
+}
+#boton:hover{
+    background-color: rgb(41, 128, 185);
+    color: #fff;
+}
+.temporizador{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    
+}
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pomodoro{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    color: rgb(133, 193, 233);
+}
+
+
+#pomodoro-temporizador{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    position: absolute;
+    color: rgb(133, 193, 233);
+}
+
+span{
+    display:none;
+}
+
+.palabra{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.progreso{
+    fill: none;
+    stroke-width: 10;
+    stroke: var(--color1);
+    stroke-dasharray: 630;
+    stroke-dashoffset: 630;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    stroke-linecap:butt;
+}
+.progreso2{
+    fill: none;
+    stroke: rgb(233,233,233);
+    stroke-width: 10;
+
+}
+
+.botones{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-top: 4%;
+    padding-bottom: 10%;
+   
+}
+
+.Inicio{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    width: 10%;
+    border-radius: 20px;
+    background-color:rgb(26, 188, 156);
+    border: 2px solid rgb(26, 188, 156);
+    color:#fff; 
+    margin-right: 1%;
+    font-size: 1.8em;
+    padding: 0.8%;
+    
+}
+
+.Inicio:hover{
+    background: rgba(26, 188, 156,0.8);
+}
+.Pausa{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    width: 10%;
+    border-radius: 20px;
+    background-color:rgb(255, 87, 51);
+    border: 2px solid rgb(255, 87, 51);
+    color: #fff;
+    margin-right: 1%;
+    font-size: 1.8em;
+    padding: 0.8%;
+}
+.Pausa:hover{
+    background: rgba(255, 87, 51,0.8);
+}
+
+.Reiniciar{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    width: 10%;
+    border-radius: 20px;
+    background-color:rgb(52, 152, 219);
+    border: 2px solid rgb(52, 152, 219);
+    color: #fff;;
+    margin-right: 1%;
+    font-size: 1.8em;
+    padding: 0.8%;
+}
+
+.Reiniciar:hover{
+    background: rgba(52, 152, 219,0.8);
+}
+
+@media (max-width: 1000px){
+    span{
+        display:flex;
+    }
+    .palabra{
+        display:none;
+    }
+    #boton{
+        font-size: 0.8em;
+    }
+
+    #imagen{
+        display: none;
+    }
+    header label{
+        font-size: 1.2em;
+    }
+
+    .cambio{
+        display: flex;
+        justify-content: center;
+        margin: 70px;
+        font-size: 0.5em;
+        border-radius: 10%;
+        width: 30px;
+     
+    }
+    
+    .cambio:hover{
+        background-color: #fff;
+        color: rgb(133, 193, 233);
+    }
+    .secciones{
+        margin-bottom: 2%;
+    }
+    .progreso{
+        stroke-width: 5;
+    }
+    .progreso2{
+        stroke-width: 5;
+    }
+    
+}
